@@ -53,7 +53,7 @@ DB_FILE = os.path.join(SCRIPT_DIR, 'phone_lookup_bot.db')
 
 # Configuration
 class Config:
-    BOT_TOKEN = "" # Loaded from data.txt
+    BOT_TOKEN = "8211530135:AAF1FKRaM7zzork0GDC3smm_ZO1pAbNijB0" # Loaded from data.txt
     API_URL = "" # Loaded from data.txt
     VEHICLE_API_URL = "" # Loaded from data.txt
     GMAIL_API_URL = "" # Loaded from data.txt
