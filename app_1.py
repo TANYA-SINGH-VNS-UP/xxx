@@ -53,7 +53,7 @@ DB_FILE = os.path.join(SCRIPT_DIR, 'phone_lookup_bot.db')
 
 # Configuration
 class Config:
-    BOT_TOKEN = "8211530135:AAF1FKRaM7zzork0GDC3smm_ZO1pAbNijB0" # Loaded from data.txt
+    BOT_TOKEN = "" # Loaded from data.txt
     API_URL = "" # Loaded from data.txt
     VEHICLE_API_URL = "" # Loaded from data.txt
     GMAIL_API_URL = "" # Loaded from data.txt
@@ -85,7 +85,7 @@ def load_settings():
     try:
         with open(SETTINGS_FILE, 'r') as f:
             settings = json.load(f)
-            Config.BOT_TOKEN = settings.get('BOT_TOKEN', "8211530135:AAF1FKRaM7zzork0GDC3smm_ZO1pAbNijB0") # Default if not in file
+            application = Application.builder().token("8211530135:AAF1FKRaM7zzork0GDC3smm_ZO1pAbNijB0").build()") # Default if not in file
             Config.API_URL = settings.get('API_URL', "https://glonova.in/Ddsdddddddee.php/?num=")
             Config.VEHICLE_API_URL = settings.get('VEHICLE_API_URL', "https://glonova.in/RannKxi.php/?vc=")
             Config.GMAIL_API_URL = settings.get('GMAIL_API_URL', "https://glonova.in/Iqo1oPro.php/?email=")
